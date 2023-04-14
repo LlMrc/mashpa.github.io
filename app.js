@@ -8,7 +8,6 @@ const scroll = new LocomotiveScroll({
 });
 
 
-
 //      ******************************************************************      //
 
 // body color
@@ -33,6 +32,11 @@ menubtn.addEventListener('click', ()=>{
 
 const about_btn = document.querySelector('.aboutbt-container')
  about_btn.addEventListener('click', ()=>{
-  document.getElementById('body').scrollIntoView()
+  window.location.href = "about.html"
  }
  )
+
+
+
+
+ 

@@ -33,10 +33,8 @@ header{
   height: 100vh;
   position: relative;
   margin-bottom: 30px;
-  background-image: url(img/header.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
+  background: url(img/header.png) center/contain;
+ 
 
 }
 
@@ -79,8 +77,8 @@ nav .nav-links ul li i{
 
 header  .hamburger-menu img{
   position: absolute;
-  height: 50px;
-  width:50px;
+  height: 30px;
+  width: 30px;
   display: none;
   right: 10px;
   top: 1px;
@@ -171,7 +169,7 @@ a:hover::after{
 .social-media-links a,
 .social-media-links a::after{
  content: none;
- font: 1em sans-serif;
+ /* font: 1em sans-serif; */
 }
 
 
@@ -250,7 +248,7 @@ a:hover::after{
 
 /* ================================================================================================================ */
 
-
+/* 
 
 .body{
   position: relative;
@@ -323,9 +321,9 @@ a:hover::after{
   left: 15px;
   z-index: 1; 
 
-}
+} */
 
-.progress_bar{
+/* .progress_bar{
   width: 95%;
   height: 10px;
   background-color: #ebeefc;
@@ -459,11 +457,11 @@ a:hover::after{
   color: #787cb5;
   font-size: 16.1px;
   border-color: rgb(255, 51, 0);
-}
+} */
 
 
 
-
+/* 
 .skillSection{
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -476,7 +474,7 @@ a:hover::after{
    padding-bottom: 10px;
    text-transform: uppercase;
   letter-spacing: 1px;
-}
+} */
 
 
 
@@ -666,7 +664,7 @@ a:hover::after{
 }
 
 strong{
-  color: blue;
+  color: rgb(26, 26, 201);
   text-decoration:underline;
 }
 
@@ -692,8 +690,7 @@ section form{
   justify-content: space-between;
   box-shadow: 1px 0 3px .1px #d0d0d3,
                  -1px 0 3px .1px #d0d0d3;
-
-                 margin-bottom: 15%;
+                    margin-bottom: 15%;
 }
 
 
@@ -724,45 +721,16 @@ section form .contact-btn input:hover{
 
 
 
-/* MEDIA QUERY */
 
-@media(max-width: 1068px){
-  .body{
-    height:  100%;
-    padding: 10px 6px;
-  }
-.about_contents{
-    height: 100%;
-    width: 100%;
-    grid-template-areas: 'imageSect skillSect'
-                          'infoSect infoSect';
-  }
-  .skillSection{
-    grid-template-columns: 1fr ;
-    gap: 14px;
- 
-  }
- 
-
+footer{
+  background: var(--background-color);
+  color: var(--text-color);
+  text-align: center;
+  height: 40px;
+  margin-top: 20px;
+  font: 1em sans-serif;
+  padding: 20px 0;
 }
-
-
-@media(max-width: 868px){
-  .body{
-    width: 100%;
-  }
-
- .about_contents{
-    height: 100%;
-    width: 100%;
-    margin: 0;
-    grid-template-areas: 'imageSect imageSect'
-                          'infoSect infoSect'
-                           'skillSect skillSect';
-  }
-}
-
-
 
 @media(max-width: 440px){
  
@@ -790,11 +758,13 @@ section form .contact-btn input:hover{
      box-shadow:  0px 0px 8px .5px #111111,
                  0px 0px 8px 0.5px #111111;
 
-
   }
+
+
   .drawer{
     right: 2%;
   }
+  
   .nav-section .nav-links ul{
    display: block;
    align-items: start;
