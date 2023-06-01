@@ -217,6 +217,47 @@ a:hover::after {
 
 /* ================================================================================================================ */
 
+/* BUSSINESS CARD */
+.visit-card{
+  margin: 50px auto;
+  text-decoration: solid;
+  max-width: 260px;
+  background: none;
+  border: 1px solid gray;
+  text-transform: uppercase;
+  border-radius: 4px;
+  padding: 12px;
+  cursor: pointer;
+  transition: color 0.4s linear;
+  position: relative;
+}
+.visit-card a{
+  color: black;
+}
+.visit-card a:hover{
+  color: #fff;
+}
+.visit-card::before{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background:linear-gradient(to right, rgb(255, 38, 0), rgb(143, 110, 118)); 
+  z-index: -1;
+  transition: transform 0.5s;
+  transform-origin: 0 0;
+  transition-timing-function: cubic-bezier(0.5, 1.6, 0.4, 0.7);
+}
+
+.card::before{
+  content: '';
+  transform: scaleX(0);
+}
+.card:hover::before{
+  transform: scaleX(1);
+}
 /* 
 
 .body{
@@ -497,7 +538,9 @@ a:hover::after {
 .project.is-inview::before {
   width: 0;
 }
-
+#p0 {
+  margin: 0 6vw 0 auto;
+}
 #p1 {
   margin-left: 8vw;
 }
@@ -576,32 +619,70 @@ a:hover::after {
   background: url(img/web.jpg) center/cover;
 }
 
+
+
+/* ABOUT ME ARROW */
+
+/* ===================================== */
 .aboutbt-container {
   position: relative;
   display: flex;
   border: 0.3px solid #fefeff;
   align-items: center;
   justify-content: space-between;
+  background: none;
   width: 50vw;
   height: 16vw;
   max-width: 500px;
   margin: 50px 0px 0 45vw;
   color: #000;
   box-shadow: 0px 0px 8px 0.5px #cccbcb, -0px -0px 8px 0.5px #cccbcb;
-  transform-origin: left;
-  transition: 0.45s ease-out;
-  transition-delay: 0.3s;
+    background: none;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: color 0.4s linear;
 }
 
-.aboutbt-container:hover {
-  background-color: var(--background-color);
-  color: #fefeff;
+.aboutbt-container:hover{
+  color: #fff;
 }
 
+
+.aboutbt-container::before{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #163046; 
+  z-index: -1;
+  transition: transform 0.8s;
+  transform-origin: 0 0;
+  transition-timing-function: cubic-bezier(0.5, 1.6, 0.4, 0.7);
+}
+
+
+
+.abt::before{
+  content: '';
+  transform: scaleY(0);
+}
+.abt:hover::before{
+  transform: scaleY(1);
+}
+
+
+
+.aboutbt-container img:hover {
+  width: 80px;
+  height: 80px;
+}
 .aboutbt-container .abt-p {
   display: flex;
   align-items: center;
 }
+
 
 .aboutbt-container img {
   cursor: zoom-out;
@@ -613,10 +694,6 @@ a:hover::after {
   transition: 0.5s all ease;
 }
 
-.aboutbt-container img:hover {
-  width: 80px;
-  height: 80px;
-}
 
 strong {
   color: rgb(26, 26, 201);
