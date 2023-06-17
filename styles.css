@@ -553,7 +553,7 @@ footer {
   padding: 1rem;
 }
 .skill-container > .skill-items {
-  background-color: #e5e5e7;
+
   display: grid;
   margin: 0 auto;
   grid-template-columns: repeat(4, 1fr);
