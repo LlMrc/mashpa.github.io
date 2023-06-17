@@ -15,7 +15,8 @@ header {
   display: flex;
   width: 95%;
 
-  box-shadow: 0px 0px 8px 0.5px #cccbcb, -0px -0px 8px 0.5px #cccbcb;
+
+  box-shadow: 0px 0px 4px  #9c9b9b, -0px -0px 0px  #b1afaf;
 
   align-items: center;
   border-radius: 8px;
@@ -28,6 +29,8 @@ header {
 .imageSection {
   grid-area: imageSect;
 }
+
+
 
 .infoSection {
   grid-area: infoSect;
@@ -215,12 +218,7 @@ header {
   letter-spacing: 1px;
 }
 
-footer {
-  height: 50px;
-  background-color: #163046;
-  color: #ebeef1;
-  text-align: center;
-}
+
 
 /* back button */
 
