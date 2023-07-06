@@ -162,7 +162,9 @@ header {
   padding: 0 14px;
 }
 .infoSection .hello::before {
-  content: "note-quotes";
+  content: "\201c";
+  font-size: 50px;
+  color: #b8600e;
 }
 
 .personalInfo {
@@ -223,8 +225,9 @@ header {
 /* back button */
 
 .container-btn {
-  width: 100%;
+  width: 90%;
   display: flex;
+  margin: 20px 4px;
   align-items: center;
   justify-content: center;
 }
@@ -232,18 +235,23 @@ header {
 button {
   font-size: 1.5rem;
   font-weight: 500;
-  padding: 20px;
-  margin: 30px auto;
-  width: 30%;
-  bottom: #ebeef1;
+padding: 20px 10px;
+  width: 18%;
+  bottom: #9bb1b1;
   cursor: pointer;
   border: none;
+  background: #ebeef1;
   color: #4d36a7;
   border-radius: 50px;
-  box-shadow: 10px 10px 10px -1px rgba(10, 99, 16, 0.16), -10px, -10px, 10px,
-    -1px, rgba(255, 255, 255, 0.7);
+  -webkit-box-shadow: inset 2px 5px 16px -1px #000000; 
+  box-shadow: inset 2px 5px 16px -1px #000000;
+
 }
 
+.container-btn :hover{
+  -webkit-box-shadow: 2px 5px 16px -1px #000000; 
+  box-shadow: 2px 5px 16px -1px #000000;
+}
 /* MEDIA QUERY */
 
 @media (max-width: 1068px) {
