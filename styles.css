@@ -540,7 +540,7 @@ footer {
 .skill-container {
   position: relative;
   flex-direction: column;
-  height: 490px;
+  height: 510px;
   background-color: #eaecee;
   margin: 14rem 12rem;
   padding: 2rem;
@@ -569,12 +569,12 @@ footer {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  box-shadow: -1px 4px 34px -10px rgba(0, 0, 0, 0.75);
-  -webkit-box-shadow: -1px 4px 34px -10px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: -1px 4px 34px -10px rgba(0, 0, 0, 0.75);
-  border-radius: 10px 10px 10px 10px;
-  -webkit-border-radius: 10px 10px 10px 10px;
+  -webkit-box-shadow: -1px 4px 34px -10px rgba(0, 0, 0, 0.75);
+  box-shadow: -1px 4px 34px -10px rgba(0, 0, 0, 0.75);
   -moz-border-radius: 10px 10px 10px 10px;
+  -webkit-border-radius: 10px 10px 10px 10px;
+  border-radius: 10px 10px 10px 10px;
 }
 
 .skills-card > img {
