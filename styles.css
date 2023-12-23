@@ -113,6 +113,7 @@ header h2 {
 
 .title {
   letter-spacing: 0;
+
   padding-bottom: 60px;
 }
 
@@ -201,6 +202,7 @@ a:hover::after {
 .line {
   height: 2px;
   width: 70%;
+
   margin: 0 auto;
   transform-origin: left;
   background: #000101;
@@ -220,11 +222,14 @@ a:hover::after {
 /* BUSSINESS CARD */
 .visit-card {
   margin: 50px auto;
+
+  height: 60px;
   text-decoration: solid;
   max-width: 260px;
   background: none;
   border: 1px solid gray;
   text-transform: uppercase;
+  text-align: center;
   border-radius: 4px;
   padding: 12px;
   cursor: pointer;
@@ -289,10 +294,6 @@ a:hover::after {
 
 .portfolio {
   margin: 200px 0;
-}
-
-.projects-container {
-  margin-top: 100px;
 }
 
 .project {
@@ -376,8 +377,7 @@ a:hover::after {
 }
 
 .net {
-  margin: 30px 0 12px;
-  margin-bottom: 100px;
+  height: 350px;
 }
 
 .net p {
@@ -387,8 +387,6 @@ a:hover::after {
   color: #000;
 }
 
-
-
 .net a {
   color: #000;
   font-size: calc(1rem + 2vw);
@@ -396,6 +394,7 @@ a:hover::after {
 
 .img2 {
   height: 200px;
+  width: auto;
   background: url(img/web.jpg) center/cover;
 }
 
@@ -408,14 +407,15 @@ a:hover::after {
   border: 0.3px solid #fefeff;
   align-items: center;
   justify-content: space-between;
-  background: none;
+
   width: 50vw;
   height: 16vw;
   max-width: 500px;
-  margin: 50px 0px 0 45vw;
+  margin: 150px 0px 0 40vw;
   color: #000;
   box-shadow: 0px 0px 8px 0.5px #cccbcb, -0px -0px 8px 0.5px #cccbcb;
   background: none;
+
   text-transform: uppercase;
   cursor: pointer;
   transition: color 0.4s linear;
@@ -473,7 +473,6 @@ strong {
 
 /* contact section */
 
-
 section form {
   background: linear-gradient(white, rgb(217, 217, 217));
   display: grid;
@@ -501,30 +500,30 @@ textarea {
   margin: 10px auto;
   resize: none;
 } */
- form input{
+form input {
   padding: 10px;
   margin: 8px;
   border-radius: 10px;
- }
+}
 
- form textarea{
+form textarea {
   padding: 10px;
   margin: 8px;
   border-radius: 10px;
- }
- form .contact-btn input {
+}
+form .contact-btn input {
   width: 100px;
   padding: 10px;
   border-radius: 20px;
-  
- background: var(--text-color);
+
+  background: var(--text-color);
   color: var(--background-color);
   transition: 0.2s;
   cursor: pointer;
   margin-bottom: 10px;
 }
 
- form .contact-btn input:hover {
+form .contact-btn input:hover {
   border: 1px solid whitesmoke;
 }
 
@@ -534,7 +533,6 @@ footer {
   text-align: center;
   font: 1em sans-serif;
   padding: 2rem;
-
 }
 
 .skill-container {
@@ -553,7 +551,6 @@ footer {
   padding: 1rem;
 }
 .skill-container > .skill-items {
-
   display: grid;
   margin: 0 auto;
   grid-template-columns: repeat(4, 1fr);
@@ -568,6 +565,7 @@ footer {
   text-align: center;
   display: flex;
   flex-direction: column;
+
   justify-content: center;
   box-shadow: -1px 4px 34px -10px rgba(0, 0, 0, 0.75);
   -webkit-box-shadow: -1px 4px 34px -10px rgba(0, 0, 0, 0.75);
@@ -592,32 +590,40 @@ footer {
 /* ////////////////////////////////////////////////////////////////////////// */
 
 @media (max-width: 440px) {
-  
   form input,
-   textarea{
+  textarea {
     width: 100%;
     margin: 4px;
   }
 
+  .portfolio {
+    margin: 100px 0;
+  }
+
+  .skills h2 {
+    margin-bottom: 50px;
+  }
+
+  .title {
+    font-size: xx-large;
+  }
   .skill-container > .skill-items {
     grid-template-columns: repeat(2, 1fr);
-   
     width: 100%;
-  
-  
-  
   }
 
   .skill-container {
     margin: 0;
-    margin-bottom: 30rem ;
+    margin-bottom: 30rem;
     padding: 0;
   }
 
   section form {
     width: 90%;
   }
-
+  header {
+    height: 70vh;
+  }
   header .hamburger-menu img {
     display: block;
   }
