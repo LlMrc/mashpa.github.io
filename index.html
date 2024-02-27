@@ -17,7 +17,7 @@
   <title>leonard portfolio</title>
 </head>
 
-<div data-scroll-container>
+<main data-scroll-container>
 
   <body>
     <header data-scroll>
@@ -58,29 +58,34 @@
       <div class="hamburger-menu">
         <img src="img/menu.png" alt="hamburger menu" />
       </div>
-      <div class="wrapper">
-        <div data-scroll class="appear" id="h1-wrapper">
-          <h2 data-scroll data-scroll-position="horizontal" data-scroll-speed="1">
-            Louis Marc Léonard
-          </h2>
+
+      <div class="intro">
+        <div class="wrapper">
+          <div data-scroll class="appear" id="h1-wrapper">
+            <h2 data-scroll data-scroll-position="left" data-scroll-direction="horizontal" data-scroll-speed="1"
+              id="leo">
+              Louis Marc Léonard
+            </h2>
+          </div>
+        </div>
+
+        <div class="wrapper">
+          <div data-scroll class="appear" id="h2-wrapper1">
+            <h2 data-scroll data-scroll-position="left" data-scroll-direction="horizontal" data-scroll-speed="-6">
+              Front-End
+            </h2>
+          </div>
+        </div>
+
+        <div data-scroll data-scroll-repeat="true" class="wrapper" id="color-bg">
+          <div data-scroll class="appear" id="h2-wrapper2">
+            <h2 data-scroll data-scroll-position="left" data-scroll-direction="horizontal" data-scroll-speed="6">
+              Developer
+            </h2>
+          </div>
         </div>
       </div>
 
-      <div class="wrapper">
-        <div data-scroll class="appear" id="h2-wrapper1">
-          <h2 data-scroll data-scroll-position="left" data-scroll-direction="horizontal" data-scroll-speed="-6">
-            Front-End
-          </h2>
-        </div>
-      </div>
-
-      <div data-scroll data-scroll-repeat="true" class="wrapper" id="color-bg">
-        <div data-scroll class="appear" id="h2-wrapper2">
-          <h2 data-scroll data-scroll-position="left" data-scroll-direction="horizontal" data-scroll-speed="6">
-            Developer
-          </h2>
-        </div>
-      </div>
 
       <div class="scroll-wrapper">
         <p data-scroll data-scroll-position="top" data-scroll-speed="3">
@@ -260,7 +265,6 @@
 
     <section data-scroll class="skill-container">
 
-
       <div class="illustration">
         My skills section showcases a kaleidoscope of my talents, blending
         creativity, problem-solving, and an unwavering passion for
@@ -323,20 +327,22 @@
           <span>Mobile</span>
         </div>
       </div>
-
     </section>
 
-    <div class="visit-card card">
-      <a href="img/1.png" download="business-card">My business card</a>
-    </div>
 
-    <div data-scroll class="line-wrapper" data-scroll-repeat="true">
-      <div class="line"></div>
-    </div>
+    <section>
+      <div data-scroll class="line-wrapper" data-scroll-repeat="true">
+        <div class="line"></div>
+      </div>
+      <div class="visit-card card">
+        <a href="img/1.png" download="business-card">My business card</a>
+      </div>
+    </section>
+
+
+
 
     <footer class="contact" id="contact" data-scroll>
-
-
       <form action="https://formsubmit.co/leomag419@gmail.com" target="_blank" method="POST">
         <div>
           <input type="text" title="name" placeholder="your name" required />
@@ -363,6 +369,6 @@
 
     <script src="locomotive-scroll.js"></script>
   </body>
-</div>
+</main>
 
 </html>

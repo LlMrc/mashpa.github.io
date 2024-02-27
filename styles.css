@@ -8,7 +8,6 @@
 
 html,
 body {
-  padding: 0 6px;
   background: var(--background-color);
   color: var(--text-color);
   scroll-behavior: smooth;
@@ -85,6 +84,16 @@ header h2 {
   font-size: calc(1rem + 6.5vw);
   margin: 18px 0;
   text-align: left;
+}
+
+header .intro {
+  padding: 1rem;
+}
+
+#leo {
+  font-size: calc(1rem + 4vw);
+
+  letter-spacing: 3px;
 }
 
 #h1-wrapper {
@@ -218,54 +227,6 @@ a:hover::after {
 }
 
 /* ================================================================================================================ */
-
-/* BUSSINESS CARD */
-.visit-card {
-  margin: 50px auto;
-
-  height: 60px;
-  text-decoration: solid;
-  max-width: 260px;
-  background: none;
-  border: 1px solid gray;
-  text-transform: uppercase;
-  text-align: center;
-  border-radius: 4px;
-  padding: 12px;
-  cursor: pointer;
-  transition: color 0.4s linear;
-  position: relative;
-}
-.visit-card a {
-  color: black;
-}
-.visit-card a:hover {
-  color: #fff;
-}
-.visit-card::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(to right, rgb(255, 38, 0), rgb(143, 110, 118));
-  z-index: -1;
-  transition: transform 0.5s;
-  transform-origin: 0 0;
-  transition-timing-function: cubic-bezier(0.5, 1.6, 0.4, 0.7);
-}
-
-.card::before {
-  content: "";
-  transform: scaleX(0);
-}
-.card:hover::before {
-  transform: scaleX(1);
-}
-/* 
-
-} */
 
 .skills {
   margin: 200px 0 250px;
@@ -424,8 +385,7 @@ a:hover::after {
 .aboutbt-container:hover {
   color: #fff;
 }
-
-.aboutbt-container::before {
+.visit-card .aboutbt-container::before {
   content: "";
   position: absolute;
   top: 0;
@@ -527,45 +487,31 @@ form .contact-btn input:hover {
   border: 1px solid whitesmoke;
 }
 
-footer {
-  background: var(--background-color);
-  color: var(--text-color);
-  text-align: center;
-  font: 1em sans-serif;
-  padding: 2rem;
-}
-
 .skill-container {
   position: relative;
   flex-direction: column;
-  height: 490px;
-  background-color: #eaecee;
-  margin: 14rem 12rem;
-  padding: 2rem;
 }
 .skill-container > .illustration {
   display: block;
-  font-size: 1.5rem;
+  font-size: 2.5rem;
   text-align: center;
   align-self: center;
-  padding: 1rem;
+  padding-bottom: 2rem;
 }
 .skill-container > .skill-items {
   display: grid;
-  margin: 0 auto;
+  position: relative;
   grid-template-columns: repeat(4, 1fr);
   gap: 1rem;
-  padding: 1rem;
-  top: 2rem;
-  width: 44rem;
-  height: 34rem;
+  margin: 0 auto;
+  padding: 2rem 6rem;
 }
 .skills-card {
+  position: relative;
   background: var(--text-color);
   text-align: center;
   display: flex;
   flex-direction: column;
-
   justify-content: center;
   box-shadow: -1px 4px 34px -10px rgba(0, 0, 0, 0.75);
   -webkit-box-shadow: -1px 4px 34px -10px rgba(0, 0, 0, 0.75);
@@ -587,7 +533,78 @@ footer {
   padding: 4px;
 }
 
+/* visit card  */
+
+/* BUSSINESS CARD */
+.visit-card {
+  margin: 50px auto;
+  position: relative;
+  height: 60px;
+  text-decoration: solid;
+  max-width: 260px;
+  /*
+* Created with https://www.css-gradient.com
+* Gradient link: https://www.css-gradient.com/?c1=f59c50&c2=83b0b5&gt=c&gd=dtl
+*/
+  background: #f59c50;
+  background: conic-gradient(from 315deg, #f59c50, #83b0b5);
+  border: 1px solid gray;
+  text-transform: uppercase;
+  text-align: center;
+  border-radius: 4px;
+  padding: 12px;
+  cursor: pointer;
+  transition: color 0.4s linear;
+}
+.visit-card a {
+  color: black;
+}
+.visit-card a:hover {
+  color: #fff;
+}
+.visit-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to right, rgb(255, 38, 0), rgb(143, 110, 118));
+  z-index: -1;
+  transition: transform 0.5s;
+  transform-origin: 0 0;
+  transition-timing-function: cubic-bezier(0.5, 1.6, 0.4, 0.7);
+}
+
+.card::before {
+  content: "";
+  transform: scaleX(0);
+}
+.card:hover::before {
+  transform: scaleX(1);
+}
+
+/* footer************************* */
+footer {
+  /*
+* Created with https://www.css-gradient.com
+* Gradient link: https://www.css-gradient.com/?c1=b8d6ea&c2=79c4cd&gt=c&gd=dtr
+*/
+  background: #b8d6ea;
+  background: conic-gradient(from 45deg, #b8d6ea, #79c4cd);
+  color: var(--text-color);
+  text-align: center;
+  font: 1em sans-serif;
+  padding: 2rem;
+}
 /* ////////////////////////////////////////////////////////////////////////// */
+/* medium'*************************** */
+
+@media screen and (max-width: 1024px) {
+  header .intro {
+    padding-top: 20rem;
+  }
+}
 
 @media (max-width: 440px) {
   form input,
@@ -609,6 +626,7 @@ footer {
   }
   .skill-container > .skill-items {
     grid-template-columns: repeat(2, 1fr);
+    padding: 1rem;
     width: 100%;
   }
 
@@ -654,5 +672,8 @@ footer {
   }
   .nav-section .nav-links ul li {
     margin-top: 10vw;
+  }
+  header .intro {
+    padding-top: 0rem;
   }
 }
