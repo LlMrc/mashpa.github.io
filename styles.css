@@ -632,7 +632,6 @@ footer {
 
   .skill-container {
     margin: 0;
-    margin-bottom: 30rem;
     padding: 0;
   }
 
@@ -674,6 +673,6 @@ footer {
     margin-top: 10vw;
   }
   header .intro {
-    padding-top: 0rem;
+    padding-top: 0;
   }
 }
