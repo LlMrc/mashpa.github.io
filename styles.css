@@ -605,14 +605,20 @@ footer {
   padding: 2rem;
 }
 /* ////////////////////////////////////////////////////////////////////////// */
-/* medium'*************************** */
+/* medium screen'*************************** */
 
 @media screen and (max-width: 1024px) {
   header .intro {
     padding-top: 20rem;
   }
+
+  .aboutbt-container img {
+    width: 80px;
+    height: 80px;
+  }
 }
 
+/* mobile screen********************************* */
 @media (max-width: 440px) {
   form input,
   textarea {
@@ -667,7 +673,10 @@ footer {
     transition: 0.9s cubic-bezier(0.455, 0.03, 0.515, 0.955);
     box-shadow: 0px 0px 8px 0.5px #111111, 0px 0px 8px 0.5px #111111;
   }
-
+  .aboutbt-container img {
+    width: 60px;
+    height: 60px;
+  }
   .drawer {
     right: 2%;
   }
