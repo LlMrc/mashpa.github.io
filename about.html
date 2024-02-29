@@ -11,22 +11,25 @@
   <link rel="stylesheet" href="locomotive-scroll.css" />
   <script src="about.js" type="module" defer></script>
   <link rel="stylesheet" href="style2.css" />
+
   <title>About</title>
 </head>
-<div data-scroll-container>
 
-  <body class="about-body">
+
+<body>
+  <div data-scroll-container>
     <header>
       <h1 data-scroll data-scroll--direction="horizontal" data-scroll-speed="-1">
         About me
       </h1>
     </header>
-    <section data-scroll class="body" id="body">
+    <main data-scroll>
+
       <div class="about_contents">
         <!-- ************** image section ******************* -->
-        <section class="imageSection">
+        <div class="imageSection">
           <img src="img/profil.png" alt="" />
-        </section>
+        </div>
 
         <!-- *************image section end ************** -->
 
@@ -72,45 +75,75 @@
             <div class="subject">Hard Work</div>
 
             <div class="progress_bar">
-              <div data-scroll data-scroll-repeat="true" class="progress_line" value="85%" style="max-width: 85%"></div>
+              <div data-scroll data-scroll-repeat="true" class="progress_line" value="85%" style="max-width: 85%">
+              </div>
             </div>
           </div>
 
           <div class="skill">
             <div class="subject">Web Development</div>
             <div class="progress_bar">
-              <div data-scroll data-scroll-repeat="true" class="progress_line" value="80%" style="max-width: 80%"></div>
+              <div data-scroll data-scroll-repeat="true" class="progress_line" value="80%" style="max-width: 80%">
+              </div>
             </div>
           </div>
 
           <div class="skill">
             <div class="subject">Mobile Development</div>
             <div class="progress_bar">
-              <div data-scroll data-scroll-repeat="true" class="progress_line" value="90%" style="max-width: 90%"></div>
+              <div data-scroll data-scroll-repeat="true" class="progress_line" value="90%" style="max-width: 90%">
+              </div>
             </div>
           </div>
 
           <div class="skill">
             <div class="subject">Creativity</div>
             <div class="progress_bar">
-              <div data-scroll data-scroll-repeat="true" class="progress_line" value="95%" style="max-width: 95%"></div>
+              <div data-scroll data-scroll-repeat="true" class="progress_line" value="95%" style="max-width: 95%">
+              </div>
             </div>
           </div>
         </section>
       </div>
-    </section>
+    </main>
 
     <div class="container-btn">
       <button type="button" class="back_btn">
-        <span><i class="fa fa-home" aria-hidden="true"></i></span> Go back
+        <span><i class="fa fa-home" aria-hidden="true"></i></span>
+        <span class="back-home">Home</span>
       </button>
     </div>
 
-    <footer>
+    <footer class="contact" id="contact" data-scroll>
+      <form action="https://formsubmit.co/leomag419@gmail.com" target="_blank" method="POST">
+        <div>
+          <input type="text" title="name" placeholder="your name" required />
+          <input type="text" title="cc" name="cc" placeholder="cc" />
+          <input type="email" name="email" title="email" id="email" placeholder="email" required />
+        </div>
+
+        <div class="text-area">
+          <label for="message">
+            <textarea name="message" id="message" cols="30" rows="8" placeholder="enter ur request" title="message">
+                </textarea>
+          </label>
+        </div>
+
+        <div class="contact-btn">
+          <input type="submit" name="submit" title="button" />
+          Send
+        </div>
+
+      </form>
+
       <p>copyright 2023</p>
     </footer>
-    <script src="locomotive-scroll.js"></script>
-  </body>
-</div>
+
+
+
+  </div>
+  </div class="end-btn">
+  <script src="locomotive-scroll.js"></script>
+</body>
 
 </html>

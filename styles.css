@@ -366,6 +366,7 @@ a:hover::after {
   position: relative;
   display: flex;
   border: 0.3px solid #fefeff;
+  border-radius: 2px;
   align-items: center;
   justify-content: space-between;
   width: 50vw;
@@ -381,6 +382,10 @@ a:hover::after {
   text-transform: uppercase;
   cursor: pointer;
   transition: color 0.4s linear;
+}
+
+.aboutbt-container h2 {
+  color: #163046;
 }
 
 .aboutbt-container:hover {
@@ -429,61 +434,7 @@ strong {
   text-decoration: underline;
 }
 
-/* contact section */
-
-section form {
-  background: linear-gradient(white, rgb(217, 217, 217));
-  display: grid;
-  position: relative;
-  grid-template-columns: 1fr;
-  height: 500px;
-  width: 400px;
-  border: 1px solid #949596;
-  border-radius: 6px;
-  align-items: center;
-  padding: 2rem 15px;
-  margin: 0 auto;
-  justify-content: space-between;
-  box-shadow: 1px 0 3px 0.1px #bbbbbd, -1px 0 3px 0.1px #d0d0d3;
-  margin-bottom: 15%;
-}
-
-/* section form input,
-textarea {
-  border: 1.5px solid var(--background-color);
-  border-radius: 10px;
-  width: 100%;
-  padding: 10px;
-  font-size: 1rem;
-  margin: 10px auto;
-  resize: none;
-} */
-form input {
-  padding: 10px;
-  margin: 8px;
-  border-radius: 10px;
-}
-
-form textarea {
-  padding: 10px;
-  margin: 8px;
-  border-radius: 10px;
-}
-form .contact-btn input {
-  width: 100px;
-  padding: 10px;
-  border-radius: 20px;
-
-  background: var(--text-color);
-  color: var(--background-color);
-  transition: 0.2s;
-  cursor: pointer;
-  margin-bottom: 10px;
-}
-
-form .contact-btn input:hover {
-  border: 1px solid whitesmoke;
-}
+/* ************************************************************************** */
 
 .skill-container {
   position: relative;
@@ -603,6 +554,68 @@ footer {
   text-align: center;
   font: 1em sans-serif;
   padding: 2rem;
+  color: #163046;
+}
+
+/* contact section ===================================================================================*/
+
+section form {
+  background: linear-gradient(white, rgb(217, 217, 217));
+  display: grid;
+  position: relative;
+  grid-template-columns: 1fr;
+  height: 500px;
+  width: 400px;
+  border: 1px solid #949596;
+  border-radius: 6px;
+  align-items: center;
+  padding: 2rem 15px;
+  margin: 0 auto;
+  justify-content: space-between;
+  box-shadow: 1px 0 3px 0.1px #bbbbbd, -1px 0 3px 0.1px #d0d0d3;
+  margin-bottom: 15%;
+}
+
+/* section form input,
+textarea {
+  border: 1.5px solid var(--background-color);
+  border-radius: 10px;
+  width: 100%;
+  padding: 10px;
+  font-size: 1rem;
+  margin: 10px auto;
+  resize: none;
+} */
+form input {
+  padding: 10px;
+  margin: 8px;
+  border-radius: 10px;
+}
+
+form textarea {
+  padding: 10px;
+  margin: 8px;
+  border-radius: 10px;
+}
+form .contact-btn input {
+  width: 100px;
+  padding: 10px;
+  border-radius: 20px;
+  color: #000;
+  background: var(--text-color);
+  color: var(--background-color);
+  transition: 0.2s;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+
+form .contact-btn input:hover {
+  border: 1px solid whitesmoke;
+}
+
+.end-btn {
+  height: 2rem;
+  background-color: antiquewhite;
 }
 /* ////////////////////////////////////////////////////////////////////////// */
 /* medium screen'*************************** */
