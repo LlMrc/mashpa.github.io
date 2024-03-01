@@ -30,3 +30,25 @@ const about_btn = document.querySelector(".aboutbt-container");
 about_btn.addEventListener("click", () => {
   window.location.href = "about.html";
 });
+
+initScrollOnImageLoad = (_) => {
+  Promise.all(
+    [...this.container.querySelectorAll("img")]
+      .filter((img) => !img.complete)
+      .map(
+        (img) =>
+          new Promise((resolve) => {
+            img.onload = img.onerror = resolve;
+          })
+      )
+  ).then(this.initScroll);
+};
+initScroll = (_) => {
+  setTimeout((_) => {
+    this.locomotive = new LocomotiveScroll({
+      el: this.container.querySelector("[data-scroll-container]"),
+      smooth: true,
+    });
+  }, 100);
+  LocomotiveScroll.update();
+};
