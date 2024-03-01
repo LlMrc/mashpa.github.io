@@ -49,6 +49,6 @@ initScroll = (_) => {
       el: this.container.querySelector("[data-scroll-container]"),
       smooth: true,
     });
-  }, 100);
+  }, 200);
   LocomotiveScroll.update();
 };
